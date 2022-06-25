@@ -1,0 +1,6 @@
+<tr>
+<td>{{college_term}}</td>
+<td>{{part_term}}</td>
+<td>{{level_term}}</td>
+<td>{{term_name}}</td>
+</tr>

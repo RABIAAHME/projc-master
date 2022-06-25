@@ -1,0 +1,6 @@
+<tr>
+<td>{{collage_collage_name}}</td>
+<td>{{users_role.ad_name}}</td>
+<td>{{users_role.ad_pass}}</td>
+<td>{{users_role.ad_email }}</td>
+</tr>

@@ -1,0 +1,9 @@
+<tr>
+<td>{{m}}</td>
+<td>{{colloge_subj}}</td>
+<td>{{part_subj}}</td>
+<td>{{level_subj}}</td>
+<td>{{subject_stu}}</td>
+<td>{{id}}</td>
+<td>{{term_subj}}</td>
+</tr>

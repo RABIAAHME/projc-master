@@ -1,0 +1,9 @@
+<tr>
+ <td>{{real_name}}</td>
+ <td>{{collage_dr}}</td>  
+ <td>{{part_dr}}</td> 
+ <td>{{level_dr}}</td> 
+<td>{{subj_dr}}</td> 
+ <td>{{emill_dr}}</td> 
+ <td>{{pass_dr}}</td>   
+ </tr> 

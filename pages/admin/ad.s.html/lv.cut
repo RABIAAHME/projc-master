@@ -1,0 +1,6 @@
+<tr>
+<td>{{collage_level}}</td>
+<td>{{part_level}}</td>
+ <td>{{real_name}}</td>
+<td> {{leve_stu}}</td>
+</tr>
