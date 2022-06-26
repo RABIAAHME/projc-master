@@ -225,6 +225,29 @@ function create_lec(){
         $_POST['page'] = 'login.php';
     }
 }
+function hodor(){
+    if (checklogin()) {
+        global $db;
+        include './autoInsert.php';
+        $ins = new autoInsert();
+        $ins->db_conn = $db;
+       $z=explode('-',$_POST['lec_data']) ;
+        $lec=explode('=',$z[0]);
+       $r=[];
+        $r['users_id']=$_SESSION['user_id'];
+        $r['lects_id']=$lec[1];
+        $last_id = $ins->iInsert('hodor', $r);
+         if($last_id){
+            echo "good";
+         }else{
+            echo 'bad';
+         }
+        
+        exit;
+    }else{
+        $_POST['page'] = 'login.php';
+    }
+}
 
 
 

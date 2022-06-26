@@ -12,6 +12,7 @@
     <script src="./pages/stu/stu_scan/html5-qrcode.js"></script>
 <div  id="qr-reader" style="width:1500px"  ></div>
 <div id="qr-reader-results"></div>
+<script src="./js/jquery.js"></script>
 <script>
     var resultContainer = document.getElementById('qr-reader-results');
 var lastResult, countResults = 0;
@@ -21,7 +22,13 @@ function onScanSuccess(decodedText, decodedResult) {
         lastResult = decodedText;
         // Handle on success condition with the decoded message.
         console.log(`Scan result ${decodedText}`, decodedResult);
-       
+        p={};
+        p['form_name']="hodor";
+        p['lec_data']=decodedText;
+       $.post('./index.php',p,function(data){
+        console.log(data);
+        alert(data);
+       });
         //alert(`Scan result ${decodedText}`,'***************************', decodedResult);
     }
 }
